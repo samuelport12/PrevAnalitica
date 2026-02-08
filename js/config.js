@@ -25,7 +25,7 @@ const getEnv = (key, fallback) => {
 // Link do seu Webhook do n8n (Production URL)
 export const N8N_WEBHOOK_URL = getEnv(
     'VITE_N8N_WEBHOOK_URL',
-    'https://n8n.meuzapweb.com.br/webhook-test/discord/callback'
+    'https://n8n.meuzapweb.com.br/webhook/27d9d8bb-7411-423b-ae90-5119d3cc09bb'
 );
 
 // Configuração do Firebase (Pegue no Console do Firebase > Project Settings)
