@@ -1,0 +1,74 @@
+/* ==========================================
+   PrevAnalitica AI - Estilos Personalizados
+   ========================================== */
+
+/* Base */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Scrollbar Customizada */
+::-webkit-scrollbar { 
+    width: 6px; 
+}
+::-webkit-scrollbar-track { 
+    background: #121212; 
+}
+::-webkit-scrollbar-thumb { 
+    background: #333; 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #444; 
+}
+
+/* Autofill Fix */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #121212 inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+/* Animações de Modal */
+.modal-enter { 
+    animation: modalIn 0.2s ease-out forwards; 
+}
+.modal-exit { 
+    animation: modalOut 0.2s ease-in forwards; 
+}
+
+@keyframes modalIn {
+    from { 
+        opacity: 0; 
+        transform: scale(0.95); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+}
+
+@keyframes modalOut {
+    from { 
+        opacity: 1; 
+        transform: scale(1); 
+    }
+    to { 
+        opacity: 0; 
+        transform: scale(0.95); 
+    }
+}
+
+/* Custom Scrollbar para áreas internas */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
